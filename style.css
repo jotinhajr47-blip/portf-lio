@@ -1,0 +1,268 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+button{
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 16px;
+}
+
+header{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    padding: 4%;
+    position: fixed;
+    z-index: 1000; 
+}
+
+.logotipo{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.links{
+    background-color: rgba(0, 107, 134, 0.315);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 800;
+    backdrop-filter: blur(30px);
+}
+
+.links:hover{
+    background-color:rgb(0, 151, 189);
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+}
+
+.secao1{
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 12vw;
+        mix-blend-mode: color-dodge;
+        color: rgb(218, 216, 216);
+    }
+}
+
+.conteudoPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        text-align: center;
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    p{
+        text-align: center;
+        opacity: 0.8;
+        transition: 0.5s;
+        font-weight: 800;
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+p:hover{
+    opacity: 1;
+}
+
+.divButtom{
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+.botaoPrimario{
+    background-color: rgb(0, 151, 189);
+    gap: 12px;
+    padding: 8px 18px;
+    color: white;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.botaoPrimario:hover{
+    background-color:rgba(0, 113, 141, 0.623);
+    color: white;
+}
+
+.botaoSecundario{
+    background-color: rgb(0, 151, 189);
+    gap: 12px;
+    padding: 8px 18px;
+    color: white;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.botaoSecundario:hover{
+    background-color:rgba(0, 113, 141, 0.623);
+    color: white;
+}
+
+.tituloSecao{
+    font-size: 52px;
+    font-weight: 500;
+}
+
+.secao2{
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.divCards{
+    display: grid;
+     grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    width: 100%;
+    max-width: 1100px; 
+    margin: 40px auto 0 auto;
+}
+
+.card {
+    background-color: #111; 
+    border: 1px solid rgba(0, 151, 189, 0.2); 
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center; 
+    text-align: center; 
+}
+
+.icone-card {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: invert(100%) brightness(200%); 
+}
+
+.secao3{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 50px;
+
+    h2{
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    p{
+        text-align: center;
+        font-weight: 500;
+    }
+}
+
+.insta{
+    width: 450px;
+    border-radius: 15px;
+}
+
+.divImg{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 45px 0 85px;
+    justify-content: center;
+
+    img{
+        filter: saturate(0);
+        transition: all .3s;
+
+        &:hover{
+            filter: saturate(1);
+        }
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px){
+    .divCards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px){
+    header{
+        padding: 5% 4%;
+    }
+
+    .links{
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .logotipo{
+        max-width: 55px;
+    }
+
+    .conteudoPrincipal h1{
+        font-size: 36px;
+    }
+
+    .divButtom{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tituloSecao,
+    .secao3 h2{
+        font-size: 36px;
+    }
+
+    .divCards{
+        grid-template-columns: 1fr;
+    }
+
+    .insta{
+        width: 100%;
+        max-width: 450px;
+    }
+}
