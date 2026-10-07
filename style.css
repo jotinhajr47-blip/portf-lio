@@ -274,3 +274,29 @@ p:hover{
         max-width: 450px;
     }
 }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 4%;
+    border-top: 1px solid rgba(0, 151, 189, 0.2);
+}
+
+.linksFooter{
+    display: flex;
+    gap: 20px;
+}
+
+.linksFooter a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.linksFooter a:hover{
+    opacity: 1;
+    color: rgb(0, 151, 189);
+}
