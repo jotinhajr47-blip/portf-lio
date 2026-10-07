@@ -129,11 +129,6 @@ p:hover{
     cursor: pointer;
 }
 
-.botaoPrimario:hover{
-    background-color:rgba(0, 113, 141, 0.623);
-    color: white;
-}
-
 .botaoSecundario{
     background-color: rgb(0, 151, 189);
     gap: 12px;
@@ -141,11 +136,6 @@ p:hover{
     color: white;
     transition: 0.8s;
     cursor: pointer;
-}
-
-.botaoSecundario:hover{
-    background-color:rgba(0, 113, 141, 0.623);
-    color: white;
 }
 
 .tituloSecao{
