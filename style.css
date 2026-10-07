@@ -116,6 +116,10 @@ p:hover{
     gap: 20px;
 }
 
+.divButtom a{
+    text-decoration: none;
+}
+
 .botaoPrimario{
     background-color: rgb(0, 151, 189);
     gap: 12px;
