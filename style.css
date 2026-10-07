@@ -118,6 +118,8 @@ p:hover{
 
 .divButtom a{
     text-decoration: none;
+    width: 100%;
+    max-width: 250px;
 }
 
 .botaoPrimario{
@@ -258,6 +260,7 @@ p:hover{
     .divButtom{
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
 
     .tituloSecao,
@@ -299,4 +302,9 @@ footer{
 .linksFooter a:hover{
     opacity: 1;
     color: rgb(0, 151, 189);
+}
+
+.botaoPrimario,
+.botaoSecundario{
+    width: 100%;
 }
