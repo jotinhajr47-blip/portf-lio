@@ -226,6 +226,11 @@ p:hover{
     .divImg img:hover{
         filter: saturate(1);
     }
+
+     .botaoPrimario:hover,
+    .botaoSecundario:hover{
+        background-color: rgba(0, 113, 141, 0.623);
+    }
  }    
 
 
@@ -266,6 +271,11 @@ p:hover{
     width: 100%;
     max-width: 250px;
 }
+
+.botaoPrimario,
+    .botaoSecundario{
+        width: 100%;
+    }
 
     .tituloSecao,
     .secao3 h2{
