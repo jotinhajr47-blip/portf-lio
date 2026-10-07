@@ -118,8 +118,6 @@ p:hover{
 
 .divButtom a{
     text-decoration: none;
-    width: 100%;
-    max-width: 250px;
 }
 
 .botaoPrimario{
@@ -259,9 +257,15 @@ p:hover{
 
     .divButtom{
         flex-direction: column;
-        width: 100%;
         align-items: center;
+        width: 100%;
     }
+
+    .divButtom a{
+    text-decoration: none;
+    width: 100%;
+    max-width: 250px;
+}
 
     .tituloSecao,
     .secao3 h2{
@@ -306,5 +310,5 @@ footer{
 
 .botaoPrimario,
 .botaoSecundario{
-    width: 100%;
+    white-space: nowrap;
 }
