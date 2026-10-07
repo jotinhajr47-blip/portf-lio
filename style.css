@@ -1,4 +1,4 @@
-
+a
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -208,18 +208,21 @@ p:hover{
 .divImg{
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     margin: 45px 0 85px;
     justify-content: center;
+}
 
-    img{
+ @media (hover: hover) and (pointer: fine)
+    .divImg img{
         filter: saturate(0);
         transition: all .3s;
-
-        &:hover{
-            filter: saturate(1);
-        }
     }
-}
+
+    .divImg img:hover{
+        filter: saturate(1);
+    }
+
 
 /* Tablets */
 @media (max-width: 1024px){
